@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnderOS</title>
+    <style>
+        * {
+            outline: none;
+            resize: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -khtml-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+            overscroll-behavior: contain;
+        }
+    </style>
+    <link rel="stylesheet" href="./../../boot/boot.css">
+</head>
+
+<body style="background-color: black;">
+    <div id="boot" style="display: none;">
+        <div class="loader">Loading...</div>
+    </div>
+    <script defer type="text/javascript" src="./../../boot/start.js"></script>
+    <div id="main" style="display: none;"></div>
+    <div id="extra" style="display: none;"></div>
+    <div id="devTools"></div>
+    <script defer type="text/javascript" src="./../../devTools/init.js"></script>
+    <link rel="stylesheet" href="./../../devTools/devTools.css">
+</body>
+
+</html>

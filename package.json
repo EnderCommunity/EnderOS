@@ -1,0 +1,27 @@
+{
+    "name": "enderos",
+    "version": "0.0.0",
+    "description": "[none]",
+    "main": "./system/boot.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/EnderAdel/EnderOS.git"
+    },
+    "keywords": [
+        "EnderOS",
+        "web"
+    ],
+    "author": "EnderAdel",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/EnderAdel/EnderOS/issues"
+    },
+    "homepage": "https://github.com/EnderAdel/EnderOS#readme",
+    "dependencies": {
+        "electron": "^11.1.1",
+        "v8-compile-cache": "^2.2.0"
+    }
+}
