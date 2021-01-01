@@ -5,19 +5,23 @@ var bootUI = document.getElementById("boot"),
     bootLoadingIcon = document.getElementById("boot--loadingIcon");
 bootUI.style.display = "block";
 
-bootMessage.innerText = "Starting EnderOS...";
-
-setTimeout(function() {
-    bootMessage.innerText = "Fetching the server...";
+function startBoot() {
     setTimeout(function() {
-        bootMessage.innerText = "Connecting to the server...";
+        bootUI.style.opacity = null;
+        bootMessage.innerText = "Starting EnderOS...";
         setTimeout(function() {
-            bootMessage.innerText = "Almost there...";
+            bootMessage.innerText = "Fetching the server...";
             setTimeout(function() {
-                bootLoadingIcon.classList.add("hide");
-                bootMessage.innerText = "Welcome!";
-                main();
-            }, 2600);
-        }, 5000);
-    }, 1800);
-}, 1600)
+                bootMessage.innerText = "Connecting to the server...";
+                setTimeout(function() {
+                    bootMessage.innerText = "Almost there...";
+                    setTimeout(function() {
+                        bootLoadingIcon.classList.add("hide");
+                        bootMessage.innerText = "Welcome!";
+                        main();
+                    }, 2600);
+                }, 5000);
+            }, 1800);
+        }, 2000)
+    }, 1000);
+}
