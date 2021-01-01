@@ -41,7 +41,8 @@ const { BrowserWindow } = require("./../../electron/request"), mainWindow = new 
 
 mainWindow.webContents.openDevTools({ mode: 'docked' });
 mainWindow.setAlwaysOnTop(true, 'screen');
-//win.webContents.openDevTools({mode: 'docked'});
+mainWindow.setBackgroundColor('#000000');
+//mainWindow.webContents.openDevTools({ mode: 'docked' });
 mainWindow.setMenu(null);
 mainWindow.webContents.session.webRequest.onHeadersReceived((details, callback) => {
     callback({ responseHeaders: Object.fromEntries(Object.entries(details.responseHeaders).filter(header => !/x-frame-options/i.test(header[0]))) });

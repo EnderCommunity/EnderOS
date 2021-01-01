@@ -1,2 +1,23 @@
-var bootUI = document.getElementById("boot");
+const { Main } = require("electron");
+
+var bootUI = document.getElementById("boot"),
+    bootMessage = document.getElementById("boot--message"),
+    bootLoadingIcon = document.getElementById("boot--loadingIcon");
 bootUI.style.display = "block";
+
+bootMessage.innerText = "Starting EnderOS...";
+
+setTimeout(function() {
+    bootMessage.innerText = "Fetching the server...";
+    setTimeout(function() {
+        bootMessage.innerText = "Connecting to the server...";
+        setTimeout(function() {
+            bootMessage.innerText = "Almost there...";
+            setTimeout(function() {
+                bootLoadingIcon.classList.add("hide");
+                bootMessage.innerText = "Welcome!";
+                main();
+            }, 2600);
+        }, 5000);
+    }, 1800);
+}, 1600)

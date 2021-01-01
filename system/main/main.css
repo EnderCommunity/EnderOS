@@ -1,0 +1,9 @@
+#main {
+    position: fixed;
+    z-index: 50;
+    background-color: blue;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
