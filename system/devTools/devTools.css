@@ -1,0 +1,67 @@
+#devTools {
+    width: 100vw;
+    height: 380px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 80;
+    background-color: red;
+    transform: translateY(360px);
+    transition: transform 0.26s ease;
+    opacity: 0.4;
+    border-radius: 8px;
+}
+
+#devTools:hover {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#devTools.bottom {
+    width: 100vw;
+    height: 380px;
+    right: 0px;
+    bottom: 0px;
+    transform: translateY(360px);
+    border-radius: 8px 8px 0px 0px;
+}
+
+#devTools.bottom:hover {
+    transform: translateY(0px);
+}
+
+#devTools.left {
+    width: 480px;
+    height: 100vh;
+    left: 0px;
+    transform: translateX(-460px);
+    border-radius: 0px 8px 8px 0px;
+}
+
+#devTools.left:hover {
+    transform: translateX(0px);
+}
+
+#devTools.right {
+    width: 480px;
+    height: 100vh;
+    right: 0px;
+    transform: translateX(460px);
+    border-radius: 8px 0px 0px 8px;
+}
+
+#devTools.right:hover {
+    transform: translateX(0px);
+}
+
+#devTools.top {
+    width: 100vw;
+    height: 380px;
+    top: 0px;
+    right: 0px;
+    transform: translateY(-360px);
+    border-radius: 0px 0px 8px 8px;
+}
+
+#devTools.top:hover {
+    transform: translateY(0px);
+}
