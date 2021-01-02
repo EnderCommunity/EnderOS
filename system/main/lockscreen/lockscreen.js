@@ -4,11 +4,11 @@ var lookscreen = document.getElementById("main--lockscreen"),
     lockscreen_date = document.getElementById("main--lockscreen-date"),
     lockscreen_actions = document.getElementById("main--lockscreen-actions"),
     lockscreen_message = document.getElementById("main--lockscreen-message"),
-    lockscreen_switch_lastestValue = 120,
+    lockscreen_switch_lastestValue = 140,
     lockscreen_switch_isUp = false,
     lockscreen_switch_fullLocked = false,
     lockscreen_switch_mouseMoveFunction = (e) => {
-        if (e.clientY < window.innerHeight - 120)
+        if (e.clientY < window.innerHeight - 140)
             lockscreen_switch.style.transform = `translateY(${e.clientY}px)`;
         else {
             lockscreen_switch.style.transform = null;
