@@ -4,7 +4,8 @@
     bottom: 0px;
     right: 0px;
     left: 0px;
-    padding: 28px;
+    padding: 36px;
+    padding: 36px;
     background-image: url(./default.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,15 +30,15 @@
     height: 40px;
     width: fit-content;
     position: absolute;
-    bottom: 28px;
+    bottom: 36px;
     height: 36px;
     z-index: 1;
 }
 
 #main--lockscreen .main--lockscreen-currentAccount #main--lockscreen-currentAccount-profilePhoto {
-    background-color: lightblue;
-    width: 40px;
-    height: 40px;
+    background-color: #bbbbbb;
+    width: 36px;
+    height: 36px;
     border-radius: 100px;
     display: inline-block;
     position: absolute;
@@ -48,7 +49,7 @@
     display: inline-block;
     font-size: 18px;
     font-weight: 300;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-left: 46px;
 }
 
@@ -84,7 +85,7 @@
 #main--lockscreen #main--lockscreen-actions {
     position: absolute;
     display: inline-block;
-    top: 28px;
+    top: 36px;
     font-size: 36px;
     transition: opacity 0.2s ease;
     opacity: 1;
@@ -103,7 +104,7 @@
     color: #dcdcdc;
     position: absolute;
     font-size: 16px;
-    top: 72px;
+    top: 86px;
     transition: opacity 0.2s ease;
     opacity: 1;
 }
@@ -113,13 +114,37 @@
 }
 
 #main--lockscreen #main--lockscreen-info {
-    background-color: white;
     position: absolute;
-    bottom: 28px;
-    right: 28px;
+    bottom: 36px;
+    right: 36px;
     height: 36px;
     width: 280px;
     z-index: 1;
+    text-align: right;
+    overflow: hidden;
+}
+
+#main--lockscreen #main--lockscreen-info .icon {
+    width: 34px;
+    height: 34px;
+    margin: 1px;
+}
+
+#main--lockscreen #main--lockscreen-info .icon2 {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+}
+
+#main--lockscreen #main--lockscreen-info .text {
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    color: #ababab;
+    font-weight: 300;
+    margin: 8px 0px;
+    margin-right: 10px;
+    overflow: hidden;
 }
 
 #main--lockscreen .bottom-blur {
@@ -134,7 +159,7 @@
     box-shadow: 0 5px 18px 6px #0c0c0ce6;
     background-color: #0c0c0c61;
     transition-duration: 0.4s;
-    transform: translateY(calc(100vh - 120px));
+    transform: translateY(calc(100vh - 140px));
     transition: transform 0.4s cubic-bezier(0.01, 0.02, 0, 0.98);
     z-index: 1;
 }
@@ -151,7 +176,7 @@
 #main--lockscreen .bottom-blur:before {
     content: "";
     display: block;
-    width: 120px;
+    width: 80px;
     height: 8px;
     border-radius: 100px;
     background-color: #ffffff99;
