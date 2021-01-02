@@ -39,7 +39,7 @@ const { BrowserWindow } = require("./../../electron/request"), mainWindow = new 
     kiosk: true
 });
 
-//mainWindow.webContents.openDevTools({ mode: 'docked' });
+mainWindow.webContents.openDevTools({ mode: 'docked' });
 mainWindow.setAlwaysOnTop(true, 'screen');
 mainWindow.setBackgroundColor('#000000');
 //mainWindow.webContents.openDevTools({ mode: 'docked' });

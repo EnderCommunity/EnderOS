@@ -39,7 +39,28 @@
         <div id="boot--message" class="message"></div>
     </div>
     <script defer type="text/javascript" src="./../../boot/start.js"></script>
-    <div id="main" style="display: none;"></div>
+    <div id="main" style="display: none;">
+        <div id="main--lockscreen">
+            <div class="lock">
+                <div id="main--lockscreen-switch" class="bottom-blur"></div>
+                <div class="main--lockscreen-currentAccount">
+                    <img id="main--lockscreen-currentAccount-profilePhoto">
+                    <h4 id="main--lockscreen-currentAccount-Username">Someone's PC</h4>
+                </div>
+                <h1 id="main--lockscreen-clock">00:00 AM/PM</h1>
+                <h1 id="main--lockscreen-date">Sunday, Jan 1st</h1>
+                <div id="main--lockscreen-actions">
+                    <img class="action">
+                    <img class="action">
+                    <img class="action">
+                </div>
+                <div id="main--lockscreen-message">This is an experimental project!</div>
+                <div id="main--lockscreen-info"></div>
+            </div>
+        </div>
+        <link rel="stylesheet" href="./../../main/lockscreen/lockscreen.css">
+        <script defer type="text/javascript" src="./../../main/lockscreen/lockscreen.js"></script>
+    </div>
     <link rel="stylesheet" href="./../../main/main.css">
     <script defer type="text/javascript" src="./../../main/start.js"></script>
     <div id="extra" style="display: none;"></div>
