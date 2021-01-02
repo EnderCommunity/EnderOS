@@ -6,6 +6,7 @@ function main() {
         bootUI.classList.add("hide");
         setTimeout(function() {
             bootUI.style.display = "none";
+            lockscreen_start();
         }, 1600);
     }, 1000);
 }

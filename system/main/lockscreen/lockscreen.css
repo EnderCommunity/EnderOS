@@ -1,0 +1,159 @@
+#main--lockscreen {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding: 28px;
+    background-image: url(./default.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#main--lockscreen:before {
+    content: "";
+    display: block;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+#main--lockscreen .main--lockscreen-currentAccount {
+    height: 40px;
+    width: fit-content;
+    position: absolute;
+    bottom: 28px;
+    height: 36px;
+    z-index: 1;
+}
+
+#main--lockscreen .main--lockscreen-currentAccount #main--lockscreen-currentAccount-profilePhoto {
+    background-color: lightblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    display: inline-block;
+    position: absolute;
+}
+
+#main--lockscreen .main--lockscreen-currentAccount #main--lockscreen-currentAccount-Username {
+    color: #e4e4e4;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 46px;
+}
+
+#main--lockscreen #main--lockscreen-clock {
+    font-size: 68px;
+    color: white;
+    margin: 0px;
+    margin-top: calc(50vh - 84px - 84px);
+    position: relative;
+    text-align: center;
+    transition: opacity 0.2s ease;
+    opacity: 1;
+}
+
+#main--lockscreen #main--lockscreen-clock.hide {
+    opacity: 0;
+}
+
+#main--lockscreen #main--lockscreen-date {
+    font-size: 28px;
+    color: #dedede;
+    margin-top: 0px;
+    position: relative;
+    text-align: center;
+    transition: opacity 0.2s ease;
+    opacity: 1;
+}
+
+#main--lockscreen #main--lockscreen-date.hide {
+    opacity: 0;
+}
+
+#main--lockscreen #main--lockscreen-actions {
+    position: absolute;
+    display: inline-block;
+    top: 28px;
+    font-size: 36px;
+    transition: opacity 0.2s ease;
+    opacity: 1;
+}
+
+#main--lockscreen #main--lockscreen-actions.hide {
+    opacity: 0;
+}
+
+#main--lockscreen #main--lockscreen-actions .action {
+    width: 36px;
+    height: 36px;
+}
+
+#main--lockscreen #main--lockscreen-message {
+    color: #dcdcdc;
+    position: absolute;
+    font-size: 16px;
+    top: 72px;
+    transition: opacity 0.2s ease;
+    opacity: 1;
+}
+
+#main--lockscreen #main--lockscreen-message.hide {
+    opacity: 0;
+}
+
+#main--lockscreen #main--lockscreen-info {
+    background-color: white;
+    position: absolute;
+    bottom: 28px;
+    right: 28px;
+    height: 36px;
+    width: 280px;
+    z-index: 1;
+}
+
+#main--lockscreen .bottom-blur {
+    display: block;
+    position: absolute;
+    backdrop-filter: blur(18px);
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100vh;
+    border-radius: 12px 12px 0px 0px;
+    box-shadow: 0 5px 18px 6px #0c0c0ce6;
+    background-color: #0c0c0c61;
+    transition-duration: 0.4s;
+    transform: translateY(calc(100vh - 120px));
+    transition: transform 0.4s cubic-bezier(0.01, 0.02, 0, 0.98);
+    z-index: 1;
+}
+
+#main--lockscreen .bottom-blur.moving {
+    transition: transform 0s linear;
+}
+
+#main--lockscreen .bottom-blur.full {
+    border-radius: 0px;
+    transform: translateY(0px);
+}
+
+#main--lockscreen .bottom-blur:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 8px;
+    border-radius: 100px;
+    background-color: #ffffff99;
+    margin: 18px auto;
+}
