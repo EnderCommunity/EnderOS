@@ -35,7 +35,48 @@
     z-index: 1;
 }
 
-#main--lockscreen .main--lockscreen-currentAccount #main--lockscreen-currentAccount-profilePhoto {
+#main--lockscreen .main--lockscreen-currentAccount .other {
+    opacity: 0;
+    margin-top: -51px;
+    transition: opacity 0s ease;
+}
+
+#main--lockscreen .main--lockscreen-currentAccount.other .other {
+    opacity: 1;
+    cursor: pointer;
+    margin-top: 0px;
+    transition: opacity 0.3s ease;
+}
+
+#main--lockscreen .main--lockscreen-currentAccount.other .other:before {
+    content: "";
+    background-color: #ffffff0f;
+    display: block;
+    position: absolute;
+    top: -6px;
+    bottom: -6px;
+    right: -20px;
+    pointer-events: none;
+    left: -5px;
+    z-index: -1;
+    border-radius: 20px;
+    transition: background 0.1s ease;
+}
+
+#main--lockscreen .main--lockscreen-currentAccount.other .other:hover:before {
+    background-color: #ffffff14;
+}
+
+#main--lockscreen .main--lockscreen-currentAccount.other .other:active:before {
+    background-color: #ffffff2b;
+}
+
+#main--lockscreen .main--lockscreen-currentAccount.other .first {
+    display: none;
+}
+
+#main--lockscreen .main--lockscreen-currentAccount #main--lockscreen-currentAccount-profilePhoto,
+#main--lockscreen .main--lockscreen-currentAccount .main--lockscreen-currentAccount_OtherIcon {
     background-color: #bbbbbb;
     width: 36px;
     height: 36px;
@@ -44,7 +85,12 @@
     position: absolute;
 }
 
-#main--lockscreen .main--lockscreen-currentAccount #main--lockscreen-currentAccount-Username {
+#main--lockscreen .main--lockscreen-currentAccount .main--lockscreen-currentAccount_OtherIcon {
+    background-color: transparent;
+}
+
+#main--lockscreen .main--lockscreen-currentAccount #main--lockscreen-currentAccount-Username,
+#main--lockscreen .main--lockscreen-currentAccount #main--lockscreen-currentAccount-selectUsers {
     color: #e4e4e4;
     display: inline-block;
     font-size: 18px;
@@ -150,7 +196,7 @@
 #main--lockscreen .bottom-blur {
     display: block;
     position: absolute;
-    backdrop-filter: blur(18px);
+    backdrop-filter: blur(12px);
     bottom: 0px;
     right: 0px;
     left: 0px;
@@ -181,4 +227,56 @@
     border-radius: 100px;
     background-color: #ffffff99;
     margin: 18px auto;
+}
+
+#main--lockscreen .bottom-blur .main--lockscreen-login {
+    position: fixed;
+    display: block;
+    top: 44px;
+    bottom: 120px;
+    right: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 1, 1);
+}
+
+#main--lockscreen .bottom-blur.full .main--lockscreen-login {
+    opacity: 1;
+}
+
+#main--lockscreen .bottom-blur .main--lockscreen-login .profile {
+    width: 120px;
+    height: 120px;
+    background-color: #bbbbbb;
+    border-radius: 100px;
+    display: block;
+    margin: 0px auto;
+    margin-top: calc(18vh + 20px);
+    margin-bottom: 20px;
+}
+
+#main--lockscreen .bottom-blur .main--lockscreen-login .username {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+    display: block;
+    color: white;
+}
+
+#main--lockscreen .bottom-blur .main--lockscreen-login .password {
+    border: 0px;
+    background-color: transparent;
+    padding: 12px 14px;
+    font-size: 16px;
+    display: block;
+    margin: 18px auto;
+    color: #bbbbbb;
+    border-bottom: 1px solid #757575;
+    transition-duration: 0.1s;
+}
+
+#main--lockscreen .bottom-blur .main--lockscreen-login .password:focus {
+    color: white;
+    border-bottom: 1px solid #ffffff;
 }
