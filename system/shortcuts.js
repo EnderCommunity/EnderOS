@@ -1,7 +1,8 @@
 const { app, globalShortcut } = require("./electron/request");
 app.whenReady().then(() => {
     const ret = globalShortcut.register('CommandOrControl+K', () => {
-        console.warn("The system has been forcefully closed!");
+        console.warn("[SYSTEM]: The system has been forcefully closed!");
+        console.warn("[INFO]: This means that all of your new data during this session got lost!");
         app.exit();
     });
     if (!ret) {
