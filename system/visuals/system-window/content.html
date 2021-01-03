@@ -44,11 +44,24 @@
     <div id="main" style="display: none;">
         <div id="main--lockscreen">
             <div class="lock">
-                <div id="main--lockscreen-switch" class="bottom-blur"></div>
-                <div class="main--lockscreen-currentAccount">
-                    <img id="main--lockscreen-currentAccount-profilePhoto">
-                    <h4 id="main--lockscreen-currentAccount-Username">Someone's PC</h4>
+                <div id="main--lockscreen-switch" class="bottom-blur">
+                    <div class="main--lockscreen-login">
+                        <img class="profile">
+                        <div class="username">Someone</div>
+                        <input class="password" type="password" placeholder="Enter Password">
+                    </div>
                 </div>
+                <div class="main--lockscreen-currentAccount">
+                    <div class="first">
+                        <img id="main--lockscreen-currentAccount-profilePhoto">
+                        <h4 id="main--lockscreen-currentAccount-Username">Someone's PC</h4>
+                    </div>
+                    <div class="other">
+                        <object class="main--lockscreen-currentAccount_OtherIcon" data="./../icons/face.svg" type="image/svg+xml"></object>
+                        <h4 id="main--lockscreen-currentAccount-selectUsers">Choose Another Account</h4>
+                    </div>
+                </div>
+
                 <h1 id="main--lockscreen-clock">00:00 AM/PM</h1>
                 <h1 id="main--lockscreen-date">Sunday, Jan 1st</h1>
                 <div id="main--lockscreen-actions">
