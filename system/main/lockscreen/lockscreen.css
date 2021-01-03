@@ -60,7 +60,7 @@
     left: -5px;
     z-index: -1;
     border-radius: 20px;
-    transition: background 0.1s ease;
+    transition: background-color 0.1s ease;
 }
 
 #main--lockscreen .main--lockscreen-currentAccount.other .other:hover:before {
@@ -153,6 +153,10 @@
     top: 86px;
     transition: opacity 0.2s ease;
     opacity: 1;
+}
+
+#main--lockscreen #main--lockscreen-message.top {
+    top: 32px;
 }
 
 #main--lockscreen #main--lockscreen-message.hide {
