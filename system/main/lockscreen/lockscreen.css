@@ -55,7 +55,7 @@
     position: absolute;
     top: -6px;
     bottom: -6px;
-    right: -20px;
+    right: -14px;
     pointer-events: none;
     left: -5px;
     z-index: -1;
@@ -274,10 +274,33 @@
     padding: 12px 14px;
     font-size: 16px;
     display: block;
-    margin: 18px auto;
+    margin: 36px auto;
+    padding-right: 36px;
     color: #bbbbbb;
     border-bottom: 1px solid #757575;
     transition-duration: 0.1s;
+}
+
+#main--lockscreen .bottom-blur .main--lockscreen-login #main--lockscreen-startIcon {
+    width: 20px;
+    display: block;
+    margin: 0px calc(50% - 12px);
+    margin-top: -68px;
+    margin-left: calc(50% - 12px + 106px);
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#main--lockscreen .bottom-blur .main--lockscreen-login #main--lockscreen-startIcon.disable,
+#main--lockscreen .bottom-blur .main--lockscreen-login #main--lockscreen-startIcon.disable:hover,
+#main--lockscreen .bottom-blur .main--lockscreen-login #main--lockscreen-startIcon.disable:focus {
+    opacity: 0.2;
+    cursor: auto;
+}
+
+#main--lockscreen .bottom-blur .main--lockscreen-login #main--lockscreen-startIcon:hover,
+#main--lockscreen .bottom-blur .main--lockscreen-login #main--lockscreen-startIcon:focus {
+    opacity: 1;
 }
 
 #main--lockscreen .bottom-blur .main--lockscreen-login .password:focus {
