@@ -6,7 +6,7 @@
     left: 0px;
     padding: 36px;
     padding: 36px;
-    background-image: url(./default.jpg);
+    background-image: url(./default-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -200,7 +200,7 @@
 #main--lockscreen .bottom-blur {
     display: block;
     position: absolute;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(24px);
     bottom: 0px;
     right: 0px;
     left: 0px;
