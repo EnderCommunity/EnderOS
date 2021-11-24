@@ -2,7 +2,7 @@ module.exports = {
     start: function(element) {
         element.loop = setInterval(() => {
             var date = new Date();
-            var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "No", "Dec"],
+            var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
                 nth = function(d) {
                     if (d > 3 && d < 21) return 'th';
                     switch (d % 10) {
